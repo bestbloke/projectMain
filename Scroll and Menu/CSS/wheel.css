@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background-color: white;
+	font: normal 12px/16px verdana, sans-serif;
+}
+
+#circle {
+position:absolute;
+left:80px;
+top:90px;
+width:120px;
+height:120px;
+border:2px solid black;
+text-align: center;
+border-radius:50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+background-color:gray;
+}
+
+
+div#wheel{
+padding-top: 80px;
+	padding:0px;
+	display: block;
+	position: relative;
+	margin: 0px auto;
+	width: 300px;
+	height: 300px;
+border:2px solid black;
+border-radius:50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+background-color:DarkGray;
+}
+
+
+
+p {
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
+div#wheel .val {
+	font: 11px/11px Verdana, Geneva, sans-serif;
+	color: DarkGray;
+	position: absolute;
+	left: 118px;
+	top: 143px;
+	z-index: 100;
+	display: block;
+	overflow:hidden;
+	background-color: white;
+	border: solid 1px #a1825a;
+	border-bottom-color: white;
+	border-right-color:white;
+	width: 63px;
+	height: 13px;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+clearfix:after {
+    .content: ".";
+    display: block;
+    height: 0px;
+	margin: 0px;
+	padding: 0px;
+    clear: both;
+	visibility: hidden;
+	overflow:hidden;
+	font-size: 0px;
+}
+
+.clearfix {
+	display: inline-block;
+}
