@@ -33,7 +33,7 @@
     
     
     <div id="text">
-		<h1>iPod Style Menu Navigation Simulation </h1>
+		<p>iPod Style Menu Navigation Simulation </p>
 		<a tabindex="0" href="Sports.html" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="ipodMenu">
 			<span class="ui-icon ui-icon-triangle-1-s"></span>iPodMenu
 		</a>
@@ -59,6 +59,27 @@
 			flyMenu = $('#ipodMenu').menu({ content: data, flyOut: true });
 			
 		});
+	// Menu hide and display using inner circle	
+		$('#circle').click(function(e){
+						
+			if(flyMenu.menuOpen == true){
+				$.each(allUIMenus, function(i){
+			if (allUIMenus[i].menuOpen) { allUIMenus[i].kill(); };
+			});
+			}
+			
+			else{
+				//alert('else loop');
+				flyMenu.showMenu();
+				var nextLink = $('.fg-menu').find('a:eq(0)');						
+				if (nextLink.size() > 0) {							
+					// $(event.target).trigger('mouseout');
+					nextLink.trigger('mouseover');
+				};					
+			}
+			
+			});
+	
 	
 		
 	});

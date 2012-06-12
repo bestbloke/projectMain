@@ -132,26 +132,7 @@ $('#wheel').live('dblclick',function(e) {
 			}*/
 		});
 
-// Menu hide and display using inner circle	
-$('#circle').click(function(e){
-						
-			if(flyMenu.menuOpen == true){
-				$.each(allUIMenus, function(i){
-			if (allUIMenus[i].menuOpen) { allUIMenus[i].kill(); };
-			});
-			}
-			
-			else{
-				//alert('else loop');
-				flyMenu.showMenu();
-				var nextLink = $('.fg-menu').find('a:eq(0)');						
-				if (nextLink.size() > 0) {							
-					// $(event.target).trigger('mouseout');
-					nextLink.trigger('mouseover');
-				};					
-			}
-			
-			});
+
 		
 
 
